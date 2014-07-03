@@ -1,2 +1,540 @@
-<?php ${"\x47LO\x42A\x4c\x53"}["\x71\x72\x6e\x72y\x71\x63\x6f"]="\x6d\x6fde";${"\x47\x4cOB\x41\x4c\x53"}["h\x70\x65h\x70\x68\x67\x75\x61c\x75"]="\x6c\x65ng\x74\x68";${"\x47\x4c\x4f\x42\x41\x4c\x53"}["h\x77\x76n\x70\x62i\x6b\x6d"]="c\x62";${"GL\x4f\x42A\x4c\x53"}["g\x64\x70\x76\x73j\x68eg"]="\x62\x6c\x6f\x63\x6b";${"G\x4cO\x42\x41\x4c\x53"}["\x78\x63\x72b\x70\x63\x6b\x6cbn"]="c\x69\x70\x68\x65r\x74\x65\x78\x74";${"\x47L\x4fBA\x4c\x53"}["j\x6eev\x65ln\x6f\x61"]="\x69";${"\x47\x4c\x4f\x42AL\x53"}["\x65\x69\x76\x73\x62vmp\x6f\x66\x6c"]="\x6c\x65\x6e";${"\x47L\x4f\x42\x41\x4c\x53"}["\x71\x70\x78\x6f\x64\x70\x77\x6fr\x61\x62"]="\x6dax";${"G\x4cOB\x41L\x53"}["gr\x68\x64\x67\x74\x62\x6a\x64\x62"]="\x6fr\x69\x67_\x70\x6fs";${"GLOB\x41\x4c\x53"}["\x65d\x6d\x69\x6be\x75smw\x74"]="\x70\x6c\x61\x69\x6et\x65x\x74";${"G\x4c\x4fB\x41\x4c\x53"}["\x66\x6ckvi\x65\x78\x79\x6c\x70"]="\x70\x6f\x73";${"\x47L\x4f\x42\x41\x4c\x53"}["p\x71\x6aqey\x74"]="\x69v";if(!class_exists("\x43\x72y\x70\x74\x5f\x52i\x6a\x6e\x64\x61\x65\x6c")){require_once"\x52ijndae\x6c.php";}define("C\x52\x59P\x54_A\x45S_MO\x44E_C\x54\x52",-1);define("C\x52\x59PT_\x41ES\x5f\x4d\x4f\x44E_\x45\x43\x42",1);define("\x43\x52\x59\x50\x54_AE\x53_MODE_CBC",2);define("\x43R\x59\x50\x54\x5fAE\x53\x5f\x4dOD\x45_CF\x42",3);define("\x43RYP\x54_AE\x53_\x4d\x4fD\x45\x5f\x4f\x46B",4);define("\x43\x52\x59\x50T_\x41\x45\x53_M\x4f\x44\x45_\x49\x4e\x54\x45R\x4e\x41L",1);define("\x43RY\x50T\x5fAES_M\x4f\x44E\x5fM\x43RYP\x54",2);class Crypt_AES extends Crypt_Rijndael{var$enmcrypt;var$demcrypt;var$ecb;function Crypt_AES($mode=CRYPT_AES_MODE_CBC){$ibcimsbbejs="m\x6f\x64e";${"G\x4c\x4fBA\x4c\x53"}["\x74q\x6e\x75\x62t"]="\x6do\x64\x65";if(!defined("CRYP\x54\x5fAE\x53\x5fMO\x44\x45")){switch(true){case extension_loaded("mcry\x70\x74")&&in_array("r\x69\x6an\x64ae\x6c-\x31\x32\x38",mcrypt_list_algorithms()):define("C\x52\x59\x50T\x5f\x41\x45\x53\x5f\x4dO\x44\x45",CRYPT_AES_MODE_MCRYPT);break;default:define("\x43RYP\x54\x5f\x41ES\x5f\x4d\x4f\x44E",CRYPT_AES_MODE_INTERNAL);}}switch(CRYPT_AES_MODE){case CRYPT_AES_MODE_MCRYPT:switch(${${"\x47LO\x42\x41\x4c\x53"}["t\x71\x6e\x75bt"]}){case CRYPT_AES_MODE_ECB:$this->paddable=true;$this->mode=MCRYPT_MODE_ECB;break;case CRYPT_AES_MODE_CTR:$this->mode="c\x74r";break;case CRYPT_AES_MODE_CFB:$this->mode="ncf\x62";break;case CRYPT_AES_MODE_OFB:$this->mode=MCRYPT_MODE_NOFB;break;case CRYPT_AES_MODE_CBC:default:$this->paddable=true;$this->mode=MCRYPT_MODE_CBC;}break;default:switch(${$ibcimsbbejs}){case CRYPT_AES_MODE_ECB:$this->paddable=true;$this->mode=CRYPT_RIJNDAEL_MODE_ECB;break;case CRYPT_AES_MODE_CTR:$this->mode=CRYPT_RIJNDAEL_MODE_CTR;break;case CRYPT_AES_MODE_CFB:$this->mode=CRYPT_RIJNDAEL_MODE_CFB;break;case CRYPT_AES_MODE_OFB:$this->mode=CRYPT_RIJNDAEL_MODE_OFB;break;case CRYPT_AES_MODE_CBC:default:$this->paddable=true;$this->mode=CRYPT_RIJNDAEL_MODE_CBC;}}if(CRYPT_AES_MODE==CRYPT_AES_MODE_INTERNAL){parent::Crypt_Rijndael($this->mode);}}function setBlockLength($length){return;}function setIV($iv){parent::setIV(${${"GLO\x42AL\x53"}["pq\x6a\x71\x65\x79\x74"]});if(CRYPT_AES_MODE==CRYPT_AES_MODE_MCRYPT){$this->changed=true;}}function encrypt($plaintext){if(CRYPT_AES_MODE==CRYPT_AES_MODE_MCRYPT){$this->_mcryptSetup();if($this->mode=="\x6e\x63fb"&&$this->continuousBuffer){${"G\x4c\x4f\x42\x41\x4cS"}["jul\x6ay\x76"]="\x63\x69\x70h\x65\x72\x74e\x78\x74";$dolmbcgbf="\x6c\x65\x6e";${"\x47LO\x42\x41\x4c\x53"}["qse\x6e\x76\x75f\x73g\x72\x67"]="l\x65n";${"\x47\x4c\x4fBA\x4cS"}["\x70f\x66k\x63\x76\x75\x68\x79\x65l"]="i\x76";${${"G\x4c\x4f\x42\x41\x4c\x53"}["\x70ffkcv\x75\x68\x79\x65\x6c"]}=&$this->encryptIV;${${"\x47LO\x42\x41\x4c\x53"}["\x66l\x6b\x76\x69\x65\x78\x79l\x70"]}=&$this->enbuffer["po\x73"];${"\x47\x4c\x4fB\x41\x4c\x53"}["\x61d\x74n\x63\x6d\x70\x72\x63\x6f"]="i";${$dolmbcgbf}=strlen(${${"\x47L\x4f\x42A\x4c\x53"}["ed\x6d\x69ke\x75sm\x77\x74"]});${${"G\x4cO\x42A\x4c\x53"}["\x6a\x75l\x6a\x79\x76"]}="";${${"G\x4cOB\x41L\x53"}["\x61\x64\x74\x6e\x63m\x70\x72\x63\x6f"]}=0;if(${${"\x47L\x4f\x42\x41L\x53"}["f\x6c\x6bvie\x78y\x6c\x70"]}){${"GLO\x42\x41\x4cS"}["jgle\x62o"]="\x70\x6f\x73";${"G\x4c\x4f\x42A\x4c\x53"}["\x79\x62\x63\x68\x66\x66\x75\x63"]="i\x76";${${"\x47L\x4f\x42\x41\x4c\x53"}["\x67\x72\x68d\x67t\x62j\x64\x62"]}=${${"G\x4c\x4f\x42AL\x53"}["\x6a\x67le\x62\x6f"]};${"\x47LO\x42\x41L\x53"}["\x6bv\x6e\x6dhp\x6f"]="iv";$rvqmpjbhiwvd="\x6d\x61\x78";${${"\x47\x4c\x4f\x42A\x4c\x53"}["\x71\x70x\x6f\x64\x70\x77\x6f\x72\x61\x62"]}=16-${${"\x47L\x4f\x42ALS"}["\x66l\x6bviex\x79\x6c\x70"]};${"\x47\x4c\x4f\x42\x41LS"}["\x6c\x73\x73v\x69esrn"]="\x6f\x72\x69\x67\x5f\x70os";$iupjpabcwnli="c\x69\x70\x68er\x74e\x78\x74";${"\x47\x4c\x4fB\x41\x4c\x53"}["\x6f\x6bd\x75\x75r\x6c\x71\x62"]="\x69\x76";if(${${"\x47\x4c\x4f\x42A\x4cS"}["e\x69\x76sb\x76\x6d\x70o\x66l"]}>=${$rvqmpjbhiwvd}){$vtdybuxcv="\x70\x6f\x73";${${"\x47\x4c\x4f\x42AL\x53"}["\x6anev\x65\x6cn\x6f\x61"]}=${${"G\x4c\x4fBA\x4c\x53"}["\x71\x70xo\x64p\x77o\x72ab"]};${${"GLOBALS"}["e\x69v\x73\x62\x76\x6d\x70\x6ffl"]}-=${${"\x47LO\x42\x41\x4cS"}["\x71\x70\x78\x6fd\x70w\x6f\x72\x61b"]};${$vtdybuxcv}=0;}else{$whpavokzql="\x70o\x73";${"\x47\x4c\x4f\x42A\x4cS"}["\x6b\x6ee\x62k\x74\x67\x64"]="\x69";${"\x47\x4cOB\x41L\x53"}["\x69\x6du\x76\x69\x78\x73\x6b\x64uf"]="\x6c\x65n";${${"G\x4c\x4fB\x41\x4c\x53"}["\x6b\x6ee\x62\x6b\x74\x67\x64"]}=${${"\x47L\x4f\x42\x41\x4c\x53"}["e\x69v\x73\x62\x76mpo\x66\x6c"]};${$whpavokzql}+=${${"\x47\x4c\x4f\x42A\x4c\x53"}["i\x6d\x75v\x69\x78\x73kd\x75\x66"]};${${"\x47LO\x42A\x4c\x53"}["e\x69v\x73\x62\x76\x6d\x70ofl"]}=0;}${$iupjpabcwnli}=substr(${${"\x47\x4c\x4f\x42\x41L\x53"}["\x6f\x6b\x64\x75\x75\x72\x6cq\x62"]},${${"\x47L\x4f\x42\x41\x4cS"}["\x67r\x68d\x67tb\x6a\x64\x62"]})^${${"\x47LOB\x41\x4c\x53"}["\x65\x64\x6d\x69\x6b\x65u\x73\x6d\x77\x74"]};${${"\x47\x4c\x4fBA\x4c\x53"}["\x79bch\x66\x66\x75\x63"]}=substr_replace(${${"\x47\x4c\x4fB\x41\x4c\x53"}["\x6b\x76n\x6d\x68\x70\x6f"]},${${"\x47\x4c\x4fBA\x4cS"}["\x78crb\x70\x63\x6b\x6c\x62n"]},${${"G\x4c\x4fB\x41L\x53"}["\x6c\x73s\x76i\x65sr\x6e"]},${${"G\x4c\x4f\x42\x41\x4c\x53"}["\x6an\x65\x76\x65\x6c\x6eoa"]});$this->enbuffer["\x65n\x6d\x63\x72yp\x74\x5fin\x69t"]=true;}if(${${"\x47\x4cO\x42A\x4cS"}["e\x69\x76\x73\x62\x76\x6dpof\x6c"]}>=16){${"\x47LO\x42\x41L\x53"}["\x70\x74myho"]="len";if($this->enbuffer["e\x6em\x63\x72y\x70\x74\x5fi\x6eit"]===false||${${"GL\x4fB\x41L\x53"}["\x70\x74\x6d\x79\x68o"]}>280){if($this->enbuffer["en\x6dc\x72\x79\x70t_\x69nit"]===true){${"\x47L\x4f\x42\x41\x4c\x53"}["\x6e\x65n\x65\x66\x6ax"]="\x69\x76";mcrypt_generic_init($this->enmcrypt,$this->key,${${"G\x4c\x4f\x42\x41\x4c\x53"}["ne\x6e\x65\x66jx"]});$this->enbuffer["en\x6dc\x72yp\x74\x5fin\x69\x74"]=false;}${"\x47\x4c\x4f\x42\x41\x4cS"}["\x62nr\x6di\x64om\x68h\x6b"]="\x69";$wajiww="\x6ce\x6e";${${"\x47L\x4f\x42\x41L\x53"}["\x78\x63rb\x70\x63\x6bl\x62n"]}.=mcrypt_generic($this->enmcrypt,substr(${${"\x47L\x4f\x42\x41L\x53"}["e\x64\x6d\x69\x6be\x75\x73\x6d\x77\x74"]},${${"\x47\x4cO\x42\x41\x4cS"}["\x62nr\x6di\x64\x6f\x6d\x68\x68k"]},${${"GL\x4f\x42A\x4c\x53"}["e\x69v\x73bv\x6d\x70o\x66l"]}-${${"\x47\x4cOBAL\x53"}["eivs\x62v\x6d\x70o\x66l"]}%16));${${"\x47L\x4fB\x41\x4c\x53"}["p\x71j\x71\x65\x79\x74"]}=substr(${${"\x47L\x4f\x42\x41LS"}["\x78\x63\x72\x62\x70c\x6b\x6c\x62n"]},-16);${$wajiww}%=16;}else{while(${${"GL\x4f\x42\x41\x4c\x53"}["\x65\x69\x76\x73\x62\x76\x6dpo\x66\x6c"]}>=16){${"G\x4c\x4f\x42\x41\x4cS"}["\x75\x62\x6cwf\x74q\x76\x77t"]="\x69";$dyykzqgt="iv";${"G\x4c\x4f\x42\x41\x4cS"}["\x71lf\x74\x74\x6dcdv\x6d\x78d"]="l\x65\x6e";$tlomfre="\x63\x69p\x68e\x72\x74\x65\x78t";${"\x47L\x4f\x42\x41\x4cS"}["\x68royz\x6d\x74\x66\x65\x64"]="\x70\x6ca\x69\x6e\x74\x65\x78\x74";${$dyykzqgt}=mcrypt_generic($this->ecb,${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["\x70\x71\x6a\x71ey\x74"]})^substr(${${"\x47\x4c\x4f\x42\x41LS"}["\x68\x72o\x79\x7amt\x66\x65d"]},${${"\x47L\x4fB\x41\x4cS"}["\x75\x62\x6cw\x66tq\x76\x77\x74"]},16);$wsnqpsctdl="i";${$tlomfre}.=${${"\x47\x4c\x4fBAL\x53"}["\x70\x71j\x71\x65\x79t"]};${${"\x47\x4cOB\x41\x4cS"}["q\x6c\x66\x74\x74mc\x64\x76\x6d\x78\x64"]}-=16;${$wsnqpsctdl}+=16;}}}if(${${"G\x4c\x4fB\x41\x4c\x53"}["\x71s\x65\x6e\x76\x75\x66\x73\x67\x72\x67"]}){$nafgrcetpe="\x62\x6co\x63\x6b";$bspaih="l\x65n";$olezjkd="len";${"\x47LO\x42A\x4c\x53"}["\x76m\x65\x75\x72\x73\x62\x65"]="\x69\x76";$qplgql="\x69\x76";${"\x47\x4cO\x42\x41LS"}["p\x62yrqh\x69\x6f\x72\x6f"]="\x62\x6c\x6fc\x6b";$kdoniwre="\x69\x76";${${"\x47\x4cO\x42\x41\x4c\x53"}["\x70\x71\x6aq\x65y\x74"]}=mcrypt_generic($this->ecb,${${"G\x4cO\x42\x41L\x53"}["\x76\x6d\x65\x75r\x73be"]});${$nafgrcetpe}=${$qplgql}^substr(${${"G\x4cO\x42\x41\x4cS"}["\x65dm\x69\x6b\x65\x75smw\x74"]},-${$bspaih});${$kdoniwre}=substr_replace(${${"\x47L\x4fB\x41\x4cS"}["\x70\x71\x6aq\x65\x79\x74"]},${${"G\x4c\x4fB\x41\x4cS"}["\x70b\x79\x72\x71hior\x6f"]},0,${$olezjkd});${${"\x47\x4cO\x42A\x4cS"}["\x78\x63\x72\x62\x70ck\x6c\x62\x6e"]}.=${${"\x47L\x4fBA\x4c\x53"}["\x67\x64\x70\x76\x73\x6ah\x65g"]};${${"GL\x4f\x42\x41L\x53"}["\x66lkv\x69\x65\x78\x79l\x70"]}=${${"\x47\x4cO\x42\x41\x4c\x53"}["\x65i\x76\x73b\x76\x6dpof\x6c"]};}return${${"\x47L\x4f\x42A\x4cS"}["\x78\x63\x72\x62\x70\x63\x6b\x6c\x62\x6e"]};}${"G\x4cOB\x41\x4c\x53"}["\x6ch\x70tm\x72s\x77\x6f\x65"]="ci\x70\x68\x65\x72text";$pekgyvm="\x70\x6c\x61inte\x78\x74";if($this->paddable){${"\x47\x4cO\x42\x41L\x53"}["b\x65\x68\x65fj\x62\x76q\x6a"]="\x70\x6ca\x69n\x74\x65x\x74";${${"\x47\x4cO\x42\x41LS"}["\x62\x65\x68\x65\x66\x6ab\x76qj"]}=$this->_pad(${${"GL\x4f\x42\x41\x4c\x53"}["\x65d\x6d\x69\x6b\x65\x75\x73m\x77\x74"]});}${${"\x47LOB\x41LS"}["lhp\x74\x6d\x72\x73\x77o\x65"]}=mcrypt_generic($this->enmcrypt,${$pekgyvm});if(!$this->continuousBuffer){mcrypt_generic_init($this->enmcrypt,$this->key,$this->iv);}return${${"\x47L\x4f\x42\x41\x4c\x53"}["\x78\x63\x72\x62\x70c\x6blb\x6e"]};}return parent::encrypt(${${"\x47\x4c\x4f\x42A\x4c\x53"}["e\x64\x6d\x69\x6b\x65\x75sm\x77t"]});}function decrypt($ciphertext){${"\x47\x4c\x4f\x42\x41\x4c\x53"}["h\x69\x6a\x62\x75\x78h\x6c"]="c\x69\x70\x68er\x74\x65\x78\x74";if(CRYPT_AES_MODE==CRYPT_AES_MODE_MCRYPT){$deckqdext="\x70\x6c\x61int\x65x\x74";$this->_mcryptSetup();if($this->mode=="\x6ecfb"&&$this->continuousBuffer){$pegovo="\x70o\x73";${${"G\x4cO\x42ALS"}["\x70\x71j\x71\x65\x79\x74"]}=&$this->decryptIV;${$pegovo}=&$this->debuffer["p\x6f\x73"];$nbrrvttz="l\x65n";$jhfphcrwgy="\x69";$typmlb="\x70\x6c\x61\x69n\x74\x65\x78\x74";${${"\x47\x4cO\x42\x41\x4cS"}["\x65\x69vsbvm\x70o\x66\x6c"]}=strlen(${${"\x47\x4c\x4f\x42\x41\x4cS"}["\x78cr\x62\x70\x63\x6b\x6c\x62\x6e"]});${$typmlb}="";${$jhfphcrwgy}=0;if(${${"G\x4cO\x42A\x4c\x53"}["\x66\x6ck\x76\x69\x65\x78\x79\x6c\x70"]}){$ppuxwurblkc="\x63\x69\x70h\x65\x72\x74\x65xt";${"\x47L\x4fB\x41\x4cS"}["\x6d\x64y\x6c\x65k\x6bk"]="\x69\x76";${${"G\x4cOB\x41L\x53"}["gr\x68d\x67\x74\x62\x6ad\x62"]}=${${"G\x4c\x4f\x42\x41\x4cS"}["\x66lk\x76\x69ex\x79\x6c\x70"]};${"\x47\x4cO\x42\x41L\x53"}["\x64\x69\x70wio\x71\x69\x76\x6f"]="\x69\x76";$zurrkqhivj="orig\x5f\x70\x6fs";$cfkxsfbuv="\x69\x76";$dwoilc="\x63i\x70\x68\x65\x72\x74e\x78\x74";$ixqmng="m\x61\x78";${${"G\x4cO\x42\x41LS"}["\x71px\x6f\x64\x70\x77\x6f\x72a\x62"]}=16-${${"G\x4c\x4fBA\x4c\x53"}["\x66lk\x76\x69ex\x79l\x70"]};if(${${"G\x4cOB\x41\x4c\x53"}["e\x69v\x73\x62\x76\x6d\x70o\x66\x6c"]}>=${$ixqmng}){$kxjeooxcz="i";$lqppvhu="\x6d\x61\x78";${$kxjeooxcz}=${${"\x47\x4cO\x42\x41\x4cS"}["q\x70\x78\x6f\x64\x70\x77o\x72a\x62"]};${${"\x47LO\x42\x41L\x53"}["e\x69v\x73\x62\x76\x6d\x70o\x66\x6c"]}-=${$lqppvhu};${${"G\x4c\x4fB\x41\x4c\x53"}["f\x6c\x6b\x76\x69\x65\x78y\x6cp"]}=0;}else{${"\x47\x4cO\x42\x41\x4c\x53"}["dg\x6d\x71\x64\x74\x65\x77\x66\x65"]="i";${"\x47\x4cO\x42\x41\x4cS"}["v\x6aqr\x66\x6f\x61m"]="\x6ce\x6e";${${"GLO\x42A\x4c\x53"}["d\x67m\x71d\x74\x65\x77\x66\x65"]}=${${"GL\x4f\x42A\x4c\x53"}["\x65\x69\x76s\x62v\x6d\x70o\x66\x6c"]};$wvjpymc="\x6c\x65\x6e";${${"G\x4cO\x42\x41\x4c\x53"}["f\x6ck\x76ie\x78\x79\x6c\x70"]}+=${${"GL\x4fB\x41LS"}["\x76jqrfoa\x6d"]};${$wvjpymc}=0;}${${"\x47LO\x42A\x4c\x53"}["e\x64m\x69\x6b\x65\x75\x73m\x77t"]}=substr(${${"GL\x4f\x42\x41\x4c\x53"}["\x64\x69\x70\x77\x69\x6f\x71iv\x6f"]},${$zurrkqhivj})^${$dwoilc};${${"\x47L\x4f\x42ALS"}["\x6d\x64y\x6c\x65kk\x6b"]}=substr_replace(${$cfkxsfbuv},substr(${$ppuxwurblkc},0,${${"\x47\x4c\x4fB\x41\x4c\x53"}["\x6a\x6ee\x76e\x6c\x6e\x6fa"]}),${${"\x47L\x4f\x42A\x4c\x53"}["\x67r\x68\x64\x67\x74\x62\x6ad\x62"]},${${"\x47L\x4fBA\x4cS"}["\x6a\x6e\x65vel\x6e\x6f\x61"]});}if(${$nbrrvttz}>=16){${"\x47\x4c\x4fBAL\x53"}["d\x6f\x6f\x74\x69\x68\x66"]="\x6ce\x6e";$xhvwxghoc="\x63\x69\x70h\x65\x72text";${"\x47LO\x42AL\x53"}["i\x6a\x6d\x6f\x6duu"]="\x70\x6c\x61int\x65\x78t";$jnulmnyrdeyo="\x63\x62";${${"\x47LOB\x41\x4cS"}["\x68wvn\x70\x62\x69\x6bm"]}=substr(${$xhvwxghoc},${${"\x47\x4c\x4fBA\x4c\x53"}["j\x6e\x65\x76\x65lno\x61"]},${${"\x47\x4cO\x42AL\x53"}["\x64\x6fotih\x66"]}-${${"G\x4c\x4fB\x41\x4cS"}["\x65i\x76sb\x76mp\x6f\x66l"]}%16);${"\x47LO\x42\x41\x4cS"}["n\x6d\x69k\x71\x77r\x71\x64"]="\x6c\x65\x6e";${"GLO\x42\x41\x4c\x53"}["\x62\x63\x64v\x75y\x68"]="iv";${${"\x47L\x4f\x42\x41LS"}["i\x6a\x6d\x6f\x6d\x75\x75"]}.=mcrypt_generic($this->ecb,${${"\x47\x4cO\x42A\x4cS"}["p\x71jq\x65\x79\x74"]}.${${"\x47\x4c\x4f\x42\x41L\x53"}["\x68wvnpb\x69km"]})^${${"\x47\x4cOB\x41\x4c\x53"}["\x68w\x76\x6e\x70\x62i\x6b\x6d"]};${${"\x47L\x4fB\x41\x4c\x53"}["\x62c\x64v\x75\x79h"]}=substr(${$jnulmnyrdeyo},-16);${${"\x47\x4c\x4fB\x41\x4c\x53"}["\x6e\x6d\x69kq\x77r\x71\x64"]}%=16;}if(${${"G\x4c\x4fBALS"}["\x65\x69\x76s\x62vmpo\x66\x6c"]}){$lwgzcxu="\x70l\x61\x69\x6et\x65\x78\x74";${"GL\x4f\x42A\x4cS"}["\x76j\x6d\x73v\x76w\x75\x6d\x71\x6fq"]="c\x69\x70\x68\x65\x72\x74e\x78t";${${"\x47L\x4fB\x41\x4c\x53"}["pq\x6a\x71\x65\x79t"]}=mcrypt_generic($this->ecb,${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["p\x71j\x71\x65y\x74"]});$fjiervjmlbb="\x6c\x65\x6e";${$lwgzcxu}.=${${"\x47LO\x42\x41\x4c\x53"}["pq\x6a\x71\x65\x79\x74"]}^substr(${${"GLO\x42\x41L\x53"}["\x78\x63rb\x70\x63\x6bl\x62\x6e"]},-${${"\x47\x4c\x4fBA\x4cS"}["\x65i\x76\x73b\x76mpo\x66\x6c"]});${"\x47\x4cO\x42\x41\x4cS"}["\x75\x6f\x6f\x75c\x6a"]="\x6c\x65\x6e";${${"\x47L\x4fBA\x4c\x53"}["\x70\x71\x6a\x71\x65\x79\x74"]}=substr_replace(${${"G\x4c\x4f\x42A\x4c\x53"}["\x70qj\x71\x65\x79\x74"]},substr(${${"\x47\x4cO\x42\x41\x4c\x53"}["vjms\x76\x76\x77\x75\x6dq\x6f\x71"]},-${${"G\x4c\x4f\x42\x41\x4cS"}["\x75\x6f\x6fuc\x6a"]}),0,${${"GLO\x42\x41\x4c\x53"}["\x65iv\x73\x62v\x6dp\x6f\x66l"]});$iucwmtyycn="\x70\x6f\x73";${$iucwmtyycn}=${$fjiervjmlbb};}return${${"\x47L\x4fB\x41\x4c\x53"}["ed\x6di\x6b\x65\x75\x73\x6d\x77\x74"]};}if($this->paddable){${${"G\x4c\x4f\x42A\x4cS"}["\x78\x63r\x62p\x63kl\x62n"]}=str_pad(${${"\x47\x4c\x4fB\x41\x4c\x53"}["\x78\x63\x72\x62\x70ck\x6cb\x6e"]},(strlen(${${"GL\x4f\x42\x41\x4c\x53"}["x\x63r\x62\x70\x63\x6b\x6c\x62n"]})+15)&0xFFFFFFF0,chr(0));}${$deckqdext}=mdecrypt_generic($this->demcrypt,${${"\x47\x4cO\x42\x41\x4c\x53"}["x\x63\x72\x62\x70c\x6b\x6cbn"]});$rafyjarza="\x70\x6c\x61\x69\x6et\x65xt";if(!$this->continuousBuffer){mcrypt_generic_init($this->demcrypt,$this->key,$this->iv);}return$this->paddable?$this->_unpad(${$rafyjarza}):${${"\x47\x4cOBAL\x53"}["\x65\x64\x6di\x6b\x65\x75\x73\x6d\x77\x74"]};}return parent::decrypt(${${"\x47\x4cO\x42A\x4c\x53"}["hi\x6a\x62\x75\x78\x68\x6c"]});}function _mcryptSetup(){if(!$this->changed){return;}if(!$this->explicit_key_length){${"\x47LO\x42\x41\x4c\x53"}["abvzv\x6c\x71\x6di\x62\x6e"]="\x6c\x65\x6e\x67\x74\x68";$feabqzyexoel="\x6ce\x6eg\x74\x68";$ymoqlpxfli="l\x65\x6eg\x74h";${$ymoqlpxfli}=strlen($this->key)>>2;if(${${"\x47\x4cO\x42\x41\x4cS"}["\x61\x62\x76\x7a\x76l\x71\x6d\x69\x62\x6e"]}>8){${"GL\x4f\x42\x41\x4c\x53"}["\x61\x64k\x73cw\x79\x68"]="\x6c\x65n\x67\x74\x68";${${"\x47LO\x42\x41L\x53"}["a\x64\x6b\x73cw\x79\x68"]}=8;}else if(${${"\x47L\x4f\x42\x41\x4cS"}["\x68\x70\x65hp\x68\x67\x75\x61\x63u"]}<4){${${"\x47\x4cO\x42A\x4cS"}["hp\x65\x68\x70\x68\x67u\x61\x63\x75"]}=4;}$this->Nk=${$feabqzyexoel};$this->key_size=${${"\x47\x4c\x4fB\x41LS"}["\x68p\x65\x68ph\x67u\x61\x63u"]}<<2;}switch($this->Nk){case 4:$this->key_size=16;break;case 5:case 6:$this->key_size=24;break;case 7:case 8:$this->key_size=32;}$this->key=str_pad(substr($this->key,0,$this->key_size),$this->key_size,chr(0));$this->encryptIV=$this->decryptIV=$this->iv=str_pad(substr($this->iv,0,16),16,chr(0));if(!isset($this->enmcrypt)){$sdbjsmp="m\x6f\x64\x65";${"\x47\x4cOB\x41\x4c\x53"}["j\x65\x75\x6e\x75ht\x6a"]="\x6d\x6fd\x65";${"G\x4c\x4f\x42\x41L\x53"}["\x61trvn\x63\x79"]="m\x6f\x64\x65";${${"\x47\x4c\x4f\x42\x41\x4c\x53"}["\x6aeun\x75ht\x6a"]}=$this->mode;$this->demcrypt=mcrypt_module_open(MCRYPT_RIJNDAEL_128,"",${$sdbjsmp},"");$this->enmcrypt=mcrypt_module_open(MCRYPT_RIJNDAEL_128,"",${${"\x47\x4c\x4f\x42\x41L\x53"}["\x71r\x6e\x72y\x71\x63\x6f"]},"");if(${${"G\x4cO\x42\x41L\x53"}["\x61t\x72\x76\x6e\x63\x79"]}=="n\x63fb"){$this->ecb=mcrypt_module_open(MCRYPT_RIJNDAEL_128,"",MCRYPT_MODE_ECB,"");}}mcrypt_generic_init($this->demcrypt,$this->key,$this->iv);mcrypt_generic_init($this->enmcrypt,$this->key,$this->iv);if($this->mode=="\x6e\x63fb"){mcrypt_generic_init($this->ecb,$this->key,"\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");}$this->changed=false;}function enableContinuousBuffer(){parent::enableContinuousBuffer();if(CRYPT_AES_MODE==CRYPT_AES_MODE_MCRYPT){$this->enbuffer["\x65nmcr\x79\x70\x74\x5fi\x6ei\x74"]=true;$this->debuffer["\x64e\x6d\x63ry\x70t\x5fini\x74"]=true;}}function disableContinuousBuffer(){parent::disableContinuousBuffer();if(CRYPT_AES_MODE==CRYPT_AES_MODE_MCRYPT){mcrypt_generic_init($this->enmcrypt,$this->key,$this->iv);mcrypt_generic_init($this->demcrypt,$this->key,$this->iv);}}}
-?>
+<?php
+/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+
+/**
+ * Pure-PHP implementation of AES.
+ *
+ * Uses mcrypt, if available, and an internal implementation, otherwise.
+ *
+ * PHP versions 4 and 5
+ *
+ * If {@link Crypt_AES::setKeyLength() setKeyLength()} isn't called, it'll be calculated from
+ * {@link Crypt_AES::setKey() setKey()}.  ie. if the key is 128-bits, the key length will be 128-bits.  If it's 136-bits
+ * it'll be null-padded to 160-bits and 160 bits will be the key length until {@link Crypt_Rijndael::setKey() setKey()}
+ * is called, again, at which point, it'll be recalculated.
+ *
+ * Since Crypt_AES extends Crypt_Rijndael, some functions are available to be called that, in the context of AES, don't
+ * make a whole lot of sense.  {@link Crypt_AES::setBlockLength() setBlockLength()}, for instance.  Calling that function,
+ * however possible, won't do anything (AES has a fixed block length whereas Rijndael has a variable one).
+ *
+ * Here's a short example of how to use this library:
+ * <code>
+ * <?php
+ *    include('Crypt/AES.php');
+ *
+ *    $aes = new Crypt_AES();
+ *
+ *    $aes->setKey('abcdefghijklmnop');
+ *
+ *    $size = 10 * 1024;
+ *    $plaintext = '';
+ *    for ($i = 0; $i < $size; $i++) {
+ *        $plaintext.= 'a';
+ *    }
+ *
+ *    echo $aes->decrypt($aes->encrypt($plaintext));
+ * ?>
+ * </code>
+ *
+ * LICENSE: Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @category   Crypt
+ * @package    Crypt_AES
+ * @author     Jim Wigginton <terrafrost@php.net>
+ * @copyright  MMVIII Jim Wigginton
+ * @license    http://www.opensource.org/licenses/mit-license.html  MIT License
+ * @link       http://phpseclib.sourceforge.net
+ */
+
+/**
+ * Include Crypt_Rijndael
+ */
+if (!class_exists('Crypt_Rijndael')) {
+    require_once 'Rijndael.php';
+}
+
+/**#@+
+ * @access public
+ * @see Crypt_AES::encrypt()
+ * @see Crypt_AES::decrypt()
+ */
+/**
+ * Encrypt / decrypt using the Counter mode.
+ *
+ * Set to -1 since that's what Crypt/Random.php uses to index the CTR mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Counter_.28CTR.29
+ */
+define('CRYPT_AES_MODE_CTR', -1);
+/**
+ * Encrypt / decrypt using the Electronic Code Book mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Electronic_codebook_.28ECB.29
+ */
+define('CRYPT_AES_MODE_ECB', 1);
+/**
+ * Encrypt / decrypt using the Code Book Chaining mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Cipher-block_chaining_.28CBC.29
+ */
+define('CRYPT_AES_MODE_CBC', 2);
+/**
+ * Encrypt / decrypt using the Cipher Feedback mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Cipher_feedback_.28CFB.29
+ */
+define('CRYPT_AES_MODE_CFB', 3);
+/**
+ * Encrypt / decrypt using the Cipher Feedback mode.
+ *
+ * @link http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Output_feedback_.28OFB.29
+ */
+define('CRYPT_AES_MODE_OFB', 4);
+/**#@-*/
+
+/**#@+
+ * @access private
+ * @see Crypt_AES::Crypt_AES()
+ */
+/**
+ * Toggles the internal implementation
+ */
+define('CRYPT_AES_MODE_INTERNAL', 1);
+/**
+ * Toggles the mcrypt implementation
+ */
+define('CRYPT_AES_MODE_MCRYPT', 2);
+/**#@-*/
+
+/**
+ * Pure-PHP implementation of AES.
+ *
+ * @author  Jim Wigginton <terrafrost@php.net>
+ * @version 0.1.0
+ * @access  public
+ * @package Crypt_AES
+ */
+class Crypt_AES extends Crypt_Rijndael {
+    /**
+     * mcrypt resource for encryption
+     *
+     * The mcrypt resource can be recreated every time something needs to be created or it can be created just once.
+     * Since mcrypt operates in continuous mode, by default, it'll need to be recreated when in non-continuous mode.
+     *
+     * @see Crypt_AES::encrypt()
+     * @var String
+     * @access private
+     */
+    var $enmcrypt;
+
+    /**
+     * mcrypt resource for decryption
+     *
+     * The mcrypt resource can be recreated every time something needs to be created or it can be created just once.
+     * Since mcrypt operates in continuous mode, by default, it'll need to be recreated when in non-continuous mode.
+     *
+     * @see Crypt_AES::decrypt()
+     * @var String
+     * @access private
+     */
+    var $demcrypt;
+
+    /**
+     * mcrypt resource for CFB mode
+     *
+     * @see Crypt_AES::encrypt()
+     * @see Crypt_AES::decrypt()
+     * @var String
+     * @access private
+     */
+    var $ecb;
+
+    /**
+     * Default Constructor.
+     *
+     * Determines whether or not the mcrypt extension should be used.  $mode should only, at present, be
+     * CRYPT_AES_MODE_ECB or CRYPT_AES_MODE_CBC.  If not explictly set, CRYPT_AES_MODE_CBC will be used.
+     *
+     * @param optional Integer $mode
+     * @return Crypt_AES
+     * @access public
+     */
+    function Crypt_AES($mode = CRYPT_AES_MODE_CBC)
+    {
+        if ( !defined('CRYPT_AES_MODE') ) {
+            switch (true) {
+                case extension_loaded('mcrypt') && in_array('rijndael-128', mcrypt_list_algorithms()):
+                    define('CRYPT_AES_MODE', CRYPT_AES_MODE_MCRYPT);
+                    break;
+                default:
+                    define('CRYPT_AES_MODE', CRYPT_AES_MODE_INTERNAL);
+            }
+        }
+
+        switch ( CRYPT_AES_MODE ) {
+            case CRYPT_AES_MODE_MCRYPT:
+                switch ($mode) {
+                    case CRYPT_AES_MODE_ECB:
+                        $this->paddable = true;
+                        $this->mode = MCRYPT_MODE_ECB;
+                        break;
+                    case CRYPT_AES_MODE_CTR:
+                        // ctr doesn't have a constant associated with it even though it appears to be fairly widely
+                        // supported.  in lieu of knowing just how widely supported it is, i've, for now, opted not to
+                        // include a compatibility layer.  the layer has been implemented but, for now, is commented out.
+                        $this->mode = 'ctr';
+                        //$this->mode = in_array('ctr', mcrypt_list_modes()) ? 'ctr' : CRYPT_AES_MODE_CTR;
+                        break;
+                    case CRYPT_AES_MODE_CFB:
+                        $this->mode = 'ncfb';
+                        break;
+                    case CRYPT_AES_MODE_OFB:
+                        $this->mode = MCRYPT_MODE_NOFB;
+                        break;
+                    case CRYPT_AES_MODE_CBC:
+                    default:
+                        $this->paddable = true;
+                        $this->mode = MCRYPT_MODE_CBC;
+                }
+
+                break;
+            default:
+                switch ($mode) {
+                    case CRYPT_AES_MODE_ECB:
+                        $this->paddable = true;
+                        $this->mode = CRYPT_RIJNDAEL_MODE_ECB;
+                        break;
+                    case CRYPT_AES_MODE_CTR:
+                        $this->mode = CRYPT_RIJNDAEL_MODE_CTR;
+                        break;
+                    case CRYPT_AES_MODE_CFB:
+                        $this->mode = CRYPT_RIJNDAEL_MODE_CFB;
+                        break;
+                    case CRYPT_AES_MODE_OFB:
+                        $this->mode = CRYPT_RIJNDAEL_MODE_OFB;
+                        break;
+                    case CRYPT_AES_MODE_CBC:
+                    default:
+                        $this->paddable = true;
+                        $this->mode = CRYPT_RIJNDAEL_MODE_CBC;
+                }
+        }
+
+        if (CRYPT_AES_MODE == CRYPT_AES_MODE_INTERNAL) {
+            parent::Crypt_Rijndael($this->mode);
+        }
+
+    }
+
+    /**
+     * Dummy function
+     *
+     * Since Crypt_AES extends Crypt_Rijndael, this function is, technically, available, but it doesn't do anything.
+     *
+     * @access public
+     * @param Integer $length
+     */
+    function setBlockLength($length)
+    {
+        return;
+    }
+
+    /**
+     * Sets the initialization vector. (optional)
+     *
+     * SetIV is not required when CRYPT_RIJNDAEL_MODE_ECB is being used.  If not explictly set, it'll be assumed
+     * to be all zero's.
+     *
+     * @access public
+     * @param String $iv
+     */
+    function setIV($iv)
+    {
+        parent::setIV($iv);
+        if ( CRYPT_AES_MODE == CRYPT_AES_MODE_MCRYPT ) {
+            $this->changed = true;
+        }
+    }
+
+    /**
+     * Encrypts a message.
+     *
+     * $plaintext will be padded with up to 16 additional bytes.  Other AES implementations may or may not pad in the
+     * same manner.  Other common approaches to padding and the reasons why it's necessary are discussed in the following
+     * URL:
+     *
+     * {@link http://www.di-mgt.com.au/cryptopad.html http://www.di-mgt.com.au/cryptopad.html}
+     *
+     * An alternative to padding is to, separately, send the length of the file.  This is what SSH, in fact, does.
+     * strlen($plaintext) will still need to be a multiple of 16, however, arbitrary values can be added to make it that
+     * length.
+     *
+     * @see Crypt_AES::decrypt()
+     * @access public
+     * @param String $plaintext
+     */
+    function encrypt($plaintext)
+    {
+        if ( CRYPT_AES_MODE == CRYPT_AES_MODE_MCRYPT ) {
+            $this->_mcryptSetup();
+
+            // re: http://phpseclib.sourceforge.net/cfb-demo.phps
+            // using mcrypt's default handing of CFB the above would output two different things.  using phpseclib's
+            // rewritten CFB implementation the above outputs the same thing twice.
+            if ($this->mode == 'ncfb' && $this->continuousBuffer) {
+                $iv = &$this->encryptIV;
+                $pos = &$this->enbuffer['pos'];
+                $len = strlen($plaintext);
+                $ciphertext = '';
+                $i = 0;
+                if ($pos) {
+                    $orig_pos = $pos;
+                    $max = 16 - $pos;
+                    if ($len >= $max) {
+                        $i = $max;
+                        $len-= $max;
+                        $pos = 0;
+                    } else {
+                        $i = $len;
+                        $pos+= $len;
+                        $len = 0;
+                    }
+                    $ciphertext = substr($iv, $orig_pos) ^ $plaintext;
+                    $iv = substr_replace($iv, $ciphertext, $orig_pos, $i);
+                    $this->enbuffer['enmcrypt_init'] = true;
+                }
+                if ($len >= 16) {
+                    if ($this->enbuffer['enmcrypt_init'] === false || $len > 280) {
+                        if ($this->enbuffer['enmcrypt_init'] === true) {
+                            mcrypt_generic_init($this->enmcrypt, $this->key, $iv);
+                            $this->enbuffer['enmcrypt_init'] = false;
+                        }
+                        $ciphertext.= mcrypt_generic($this->enmcrypt, substr($plaintext, $i, $len - $len % 16));
+                        $iv = substr($ciphertext, -16);
+                        $len%= 16;
+                    } else {
+                        while ($len >= 16) {
+                            $iv = mcrypt_generic($this->ecb, $iv) ^ substr($plaintext, $i, 16);
+                            $ciphertext.= $iv;
+                            $len-= 16;
+                            $i+= 16;
+                        }
+                    }
+                }
+
+                if ($len) {
+                    $iv = mcrypt_generic($this->ecb, $iv);
+                    $block = $iv ^ substr($plaintext, -$len);
+                    $iv = substr_replace($iv, $block, 0, $len);
+                    $ciphertext.= $block;
+                    $pos = $len;
+                }
+
+                return $ciphertext;
+            }
+
+            if ($this->paddable) {
+                $plaintext = $this->_pad($plaintext);
+            }
+
+            $ciphertext = mcrypt_generic($this->enmcrypt, $plaintext);
+
+            if (!$this->continuousBuffer) {
+                mcrypt_generic_init($this->enmcrypt, $this->key, $this->iv);
+            }
+
+            return $ciphertext;
+        }
+
+        return parent::encrypt($plaintext);
+    }
+
+    /**
+     * Decrypts a message.
+     *
+     * If strlen($ciphertext) is not a multiple of 16, null bytes will be added to the end of the string until it is.
+     *
+     * @see Crypt_AES::encrypt()
+     * @access public
+     * @param String $ciphertext
+     */
+    function decrypt($ciphertext)
+    {
+        if ( CRYPT_AES_MODE == CRYPT_AES_MODE_MCRYPT ) {
+            $this->_mcryptSetup();
+
+            if ($this->mode == 'ncfb' && $this->continuousBuffer) {
+                $iv = &$this->decryptIV;
+                $pos = &$this->debuffer['pos'];
+                $len = strlen($ciphertext);
+                $plaintext = '';
+                $i = 0;
+                if ($pos) {
+                    $orig_pos = $pos;
+                    $max = 16 - $pos;
+                    if ($len >= $max) {
+                        $i = $max;
+                        $len-= $max;
+                        $pos = 0;
+                    } else {
+                        $i = $len;
+                        $pos+= $len;
+                        $len = 0;
+                    }
+                    // ie. $i = min($max, $len), $len-= $i, $pos+= $i, $pos%= $blocksize
+                    $plaintext = substr($iv, $orig_pos) ^ $ciphertext;
+                    $iv = substr_replace($iv, substr($ciphertext, 0, $i), $orig_pos, $i);
+                }
+                if ($len >= 16) {
+                    $cb = substr($ciphertext, $i, $len - $len % 16);
+                    $plaintext.= mcrypt_generic($this->ecb, $iv . $cb) ^ $cb;
+                    $iv = substr($cb, -16);
+                    $len%= 16;
+                }
+                if ($len) {
+                    $iv = mcrypt_generic($this->ecb, $iv);
+                    $plaintext.= $iv ^ substr($ciphertext, -$len);
+                    $iv = substr_replace($iv, substr($ciphertext, -$len), 0, $len);
+                    $pos = $len;
+                }
+
+                return $plaintext;
+            }
+
+            if ($this->paddable) {
+                // we pad with chr(0) since that's what mcrypt_generic does.  to quote from http://php.net/function.mcrypt-generic :
+                // "The data is padded with "\0" to make sure the length of the data is n * blocksize."
+                $ciphertext = str_pad($ciphertext, (strlen($ciphertext) + 15) & 0xFFFFFFF0, chr(0));
+            }
+
+            $plaintext = mdecrypt_generic($this->demcrypt, $ciphertext);
+
+            if (!$this->continuousBuffer) {
+                mcrypt_generic_init($this->demcrypt, $this->key, $this->iv);
+            }
+
+            return $this->paddable ? $this->_unpad($plaintext) : $plaintext;
+        }
+
+        return parent::decrypt($ciphertext);
+    }
+
+    /**
+     * Setup mcrypt
+     *
+     * Validates all the variables.
+     *
+     * @access private
+     */
+    function _mcryptSetup()
+    {
+        if (!$this->changed) {
+            return;
+        }
+
+        if (!$this->explicit_key_length) {
+            // this just copied from Crypt_Rijndael::_setup()
+            $length = strlen($this->key) >> 2;
+            if ($length > 8) {
+                $length = 8;
+            } else if ($length < 4) {
+                $length = 4;
+            }
+            $this->Nk = $length;
+            $this->key_size = $length << 2;
+        }
+
+        switch ($this->Nk) {
+            case 4: // 128
+                $this->key_size = 16;
+                break;
+            case 5: // 160
+            case 6: // 192
+                $this->key_size = 24;
+                break;
+            case 7: // 224
+            case 8: // 256
+                $this->key_size = 32;
+        }
+
+        $this->key = str_pad(substr($this->key, 0, $this->key_size), $this->key_size, chr(0));
+        $this->encryptIV = $this->decryptIV = $this->iv = str_pad(substr($this->iv, 0, 16), 16, chr(0));
+
+        if (!isset($this->enmcrypt)) {
+            $mode = $this->mode;
+            //$mode = $this->mode == CRYPT_AES_MODE_CTR ? MCRYPT_MODE_ECB : $this->mode;
+
+            $this->demcrypt = mcrypt_module_open(MCRYPT_RIJNDAEL_128, '', $mode, '');
+            $this->enmcrypt = mcrypt_module_open(MCRYPT_RIJNDAEL_128, '', $mode, '');
+
+            if ($mode == 'ncfb') {
+                $this->ecb = mcrypt_module_open(MCRYPT_RIJNDAEL_128, '', MCRYPT_MODE_ECB, '');
+            }
+
+        } // else should mcrypt_generic_deinit be called?
+
+        mcrypt_generic_init($this->demcrypt, $this->key, $this->iv);
+        mcrypt_generic_init($this->enmcrypt, $this->key, $this->iv);
+
+        if ($this->mode == 'ncfb') {
+            mcrypt_generic_init($this->ecb, $this->key, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+        }
+
+        $this->changed = false;
+    }
+
+    /**
+     * Treat consecutive "packets" as if they are a continuous buffer.
+     *
+     * The default behavior.
+     *
+     * @see Crypt_Rijndael::disableContinuousBuffer()
+     * @access public
+     */
+    function enableContinuousBuffer()
+    {
+        parent::enableContinuousBuffer();
+
+        if (CRYPT_AES_MODE == CRYPT_AES_MODE_MCRYPT) {
+            $this->enbuffer['enmcrypt_init'] = true;
+            $this->debuffer['demcrypt_init'] = true;
+        }
+    }
+
+    /**
+     * Treat consecutive packets as if they are a discontinuous buffer.
+     *
+     * The default behavior.
+     *
+     * @see Crypt_Rijndael::enableContinuousBuffer()
+     * @access public
+     */
+    function disableContinuousBuffer()
+    {
+        parent::disableContinuousBuffer();
+
+        if (CRYPT_AES_MODE == CRYPT_AES_MODE_MCRYPT) {
+            mcrypt_generic_init($this->enmcrypt, $this->key, $this->iv);
+            mcrypt_generic_init($this->demcrypt, $this->key, $this->iv);
+        }
+    }
+}
+
+// vim: ts=4:sw=4:et:
+// vim6: fdl=1:
